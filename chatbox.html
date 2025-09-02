@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="chatbox.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <div class="chatBox">
+            <div class="user">
+                <img src="userImg.jpg" alt="user"/>
+                <div class="user-info">
+                <h2>ME</h2>
+                </div>
+            </div>
+            <div class="chats">
+                <div class="userSide">Hey!</div>
+                <div class="mySide">hii!</div>
+                <div class="userSide">May I help you?</div>
+                <div class="mySide">yes please!</div>
+            </div>
+            <div class="textMsg">
+                <input type="text" id="text" placeholder="Type here..."/>
+                <button class="sendBtn"><img src="send.jpg" onclick="sendMessage()"/></button>
+                
+            </div>
+            <!-- <div class="chatBtn">
+                <img src="chat.png" alt="chat"/>
+            </div> -->
+            
+        </div>
+    </div>
+    <script src="chatbox.js"></script>
+</body>
+</html>

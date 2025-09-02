@@ -1,0 +1,138 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-color: #36454F;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chatBox{
+    width:500px;
+    height:550px;
+    background-image:url('idea.jpg');
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    overflow:hidden;
+    position:relative;
+    border-radius:10px;
+    
+}
+
+.user{
+    display: flex;
+    justify-content:flex-start;
+    height:60px;
+    background-color: cadetblue;
+    padding: 10px;
+}
+.user img{
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    margin-right: 10px;
+}
+.user-info{
+    position: relative;
+    padding:5px;
+    bottom:15px;
+}
+.chats{
+    font-size: 0.9em;
+    width:100%;
+    padding:0 15px;
+    position: relative;
+    
+}
+.userSide{
+    width:60%;
+    background-color: #FEC6C3;
+    word-wrap: break-word;
+    padding: 7px 10px;
+    border-radius: 10px 10px 10px 0;
+    margin:10px 0;
+}
+.mySide{
+    width:60%;
+    background-color: #671F43;
+    color: #fff;
+    word-wrap: break-word;
+    padding: 7px 10px;
+    border-radius: 10px 10px 0 10px;
+    margin:5px 25px 5px auto;
+}
+.send{
+    height:40px;
+    width:40px;
+}
+.textMsg{
+    display:flex;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    padding:15px;
+    overflow: hidden;
+    position:absolute;
+    bottom:0;
+}
+.textMsg input{
+    width:70%;
+    height:100%;
+    border-radius:50px;
+    border:none;
+    background-color: #fff;
+    opacity: 0.6;
+    font-size: 1.2em;
+    padding:0 15px;
+    /* margin: 10px; */
+}
+.sendBtn{
+    width: 60px;
+    height: 60px;
+    background-color: #4c1430;
+    overflow: hidden;
+    position:relative;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border-radius: 50%;
+    padding: 10px;
+    border:none;
+
+}
+.sendBtn:active{
+    transform: scale(0.85);
+}
+.sendBtn img{
+    width:100%;
+    height: 100%;
+}
+/* .chatBtn{
+    width: 70px;
+    height: 70px;
+    border-radius:50%;
+    background-color: #fff;
+    position: fixed;
+    cursor: pointer;
+    overflow: hidden;
+    bottom: 20px;
+    
+}
+.chatBtn img{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    border-radius: 50%;
+    /* top:0;
+    left:0; 
+   padding: 5px;
+    transition: 0.4s ease-in-out;
+}
+.chatBtn:hover{
+    transform: rotate(30deg);
+} */

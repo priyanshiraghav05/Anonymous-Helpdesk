@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Request</title>
+    <link href="submitReq.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="anonymous-form">
+            <div class="box">
+                <h2>Submit Your Request</h2>
+                <label for="describe"><h3>Describe Your Issue</h3></label>
+                <textarea id="describe" rows="5"></textarea>
+                <h2>Choose Your Category</h2></label>
+                <div class="buttons">
+                    <button id="b1" type="button">Mental Health</button> 
+                    <button id="b2" type="button">Work and Career</button>
+                    <button id="b3" type="button">Personal Issues</button>
+                    <button id="b4" type="button">Other</button>
+                </div>
+                <button class="submit" type="button">Submit</button>
+            </div>
+
+        </form>
+    </div>
+    <script>
+      const submitButton = document.querySelector('.submit');
+
+submitButton.addEventListener('click', openPage);
+
+function openPage() {
+  console.log('button was clicked');
+  window.location.href = 'chatbox.html';
+}
+
+    </script>
+</body>
+
+</html>

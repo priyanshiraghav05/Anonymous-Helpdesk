@@ -1,0 +1,108 @@
+body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(90.1deg, rgb(158, 252, 203) 16.8%, rgb(63, 100, 255) 105.2%);
+}
+h1{
+    text-align:center;
+}
+.boxes{
+    height:700px;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+}
+.boxes .item{
+    perspective: 1000px; /* Perspective for 3D effect */
+    transition: transform 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.boxes div{
+    /* border:2px solid black; */
+    display: inline-block;
+    margin:12px;
+    height:300px;
+    width:20%;
+    border-radius: 30px;
+}
+.boxes div button{
+    display: block;
+    margin: 0 auto;
+    margin-top:50%;
+    font-size:30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius:10px;
+}
+/* .boxes div button:hover{
+  
+} */
+.boxes #b1{
+    background-image:url('aging.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxes #b2{
+    background-image:url('trauma.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxes #b3{
+    background-image:url('anxiety.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxes #b4{
+    background-image:url('smoking.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxes #b5{
+    background-image:url('peer-pressure.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxes #b6{
+    background-image:url('communication.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxes #b7{
+    background-image:url('tools.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxes #b8{
+    background-image:url('depression.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxes #b9{
+    background-image:url('disability.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxes #b10{
+    background-image:url('loneliness.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxes #b11{
+    background-image:url('identity.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxes #b12{
+    background-image:url('motivation.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxes .item:hover{
+    cursor:pointer;
+    transform: rotateY(20deg) translateZ(20px); /* Rotate on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+h1{
+    font-style: italic;
+}

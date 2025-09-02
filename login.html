@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login page</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css"/>
+    <style>
+        .hidden {
+            display: none;
+        }
+        input{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h3>Login Here</h3>
+
+        <label for="username">Anonymous Username</label>
+        <input type="text" placeholder="Enter your anonymous username" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button type="button" onclick="loggedIn()">Log In</button>
+        <p id="loginMessage" class="hidden">Logged in successfully!</p>
+    </form>
+</body>
+</html>
+
+
+
+<script src="login.js"></script>
+</body>
+</html>
+  

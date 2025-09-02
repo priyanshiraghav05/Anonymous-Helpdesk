@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(90.1deg, rgb(158, 252, 203) 16.8%, rgb(63, 100, 255) 105.2%);
+            color: #fff;
+        }
+
+        header {
+            background: linear-gradient(to right, #333, #555);
+            color: black;
+            text-align: center;
+            padding: 20px;
+
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: linear-gradient(to right, #fff, #f4f4f4);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .member {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            background: linear-gradient(to right, #D1E4D1, #fff);
+        }
+        .member strong{
+          color:black;
+        }
+
+        .role {
+            font-style: italic;
+            color: #555;
+        }
+
+        #contact-form {
+            width: 300px;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        #contact-form button {
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #contact-form button:hover {
+            background: linear-gradient(to right, #555, #777);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <section>
+        <div>
+            <h2>Our Team</h2>
+            <ul>
+                <li class="member">
+                    <strong>Priyanshi Raghav</strong>
+                    <span class="role">Team Leader</span>
+                </li>
+                <li class="member">
+                    <strong>Riya</strong>
+                    <span class="role">Member</span>
+                </li>
+                <li class="member">
+                    <strong>Ravjot Kaur</strong>
+                    <span class="role">Member</span>
+                </li>
+                <li class="member">
+                    <strong>Vansh kad</strong>
+                    <span class="role">Member</span>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Contact Form</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
